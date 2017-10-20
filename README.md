@@ -1,11 +1,13 @@
 # Proof of Existence Demo
 
 
-# Coding Challenge - Due Date, Thursday October 26 2017
+# Coding Challenge - Due Date, Thursday October 26 2017 - Smart contract + AI
+
+This weeks challenge is to create an app that uses both Ethereum Smart Contracts an a machine learning model together. Possible ideas are [this](https://github.com/thoschm/START-Summit-2017-Blockchain-Machine-Learning-Workshop) repository. You can re-implement that if you'd like. Doing something as simple as sending model training timestamps to a blockchain also work. Have fun and good luck!
 
 ## Overview
 
-## Dependencies
+This is the code for [this](https://youtu.be/dP0-8D2fSb8) video on Youtube by Siraj Raval on how smart contracts work. This is the code for a proof of existence smart contract, a digital notary without needing to hire a lawyer. More detailed instructions can be found [here](https://blog.zeppelin.solutions/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05).
 
 ## Usage
 

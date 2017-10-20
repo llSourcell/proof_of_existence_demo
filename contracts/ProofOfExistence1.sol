@@ -19,7 +19,7 @@ contract existence {
 
   function destroy() {
   	if(msg.sender == owner) {
-  		selfdesruct(owner); // if you want to delete the existence of the document and recieve the ether, then this would help!
+  		selfdestruct(owner); // if you want to delete the existence of the document and recieve the ether, then this would help!
   	}
   }
 

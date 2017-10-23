@@ -1,21 +1,26 @@
-// Proof of Existence contract, version 1
-contract ProofOfExistence1 {
-  // state
-  bytes32 public proof;
+pragma solidity ^0.4.4;
 
+contract existence {
 
-  // constructor
-  function ProofOfExistence() {
+	bytes32 public proof;
+	address owner;
+
+  function existence() {
+  	owner = msg.sender; // save the owner.
   }
 
-
-  // calculate and store the proof for a document
-  function notarize(string document) {
-    proof = calculateProof(document);
+  function doc2sha(string document) returns (bytes32) {
+  	return sha256(document); // convert the document string to bytes32 (sha256)
   }
 
-  // helper function to get a document's sha256
-  function calculateProof(string document) returns (bytes32) {
-    return sha256(document);
+  function store(string document) {
+  	proof = doc2sha(document); // then save it into a constant called proof.
   }
+
+  function destroy() {
+  	if(msg.sender == owner) {
+  		selfdestruct(owner); // if you want to delete the existence of the document and recieve the ether, then this would help!
+  	}
+  }
+
 }
